@@ -1,0 +1,62 @@
+.movie-info-card {
+    height: auto;
+    width: 40vh;
+    justify-items: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+.movie-card:hover {
+    transform: translateY(0px);
+  }
+
+
+.Info-grid{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 1.5rem;
+    padding: 1rem;
+    width: 100%;
+    align-items: start;
+    justify-items: center;
+}
+
+.movie-text p{
+    font-size: 1rem;
+    color: #ddd; /* Light gray for readability */
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+    
+}
+
+p{
+    margin: revert;
+}
+
+.movie-text h1 h2 h3 h4 {
+
+    color: #ddd; /* Light gray for readability */
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+    
+}
+
+
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .Info-grid {
+      grid-template-columns: 1fr; /* Adjust columns for smaller screens */
+    }
+  
+    .movie-info-card {
+      height: auto; /* Allow the card height to adjust automatically */
+      justify-content: center;
+    }
+  
+    .movie-overview,
+    .movie-text {
+      font-size: 0.8rem; /* Adjust font size for smaller screens */
+    }
+  }
+  
